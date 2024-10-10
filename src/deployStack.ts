@@ -111,8 +111,5 @@ export async function deployStack({
   } catch (error) {
     core.info('⛔️ Something went wrong during deployment!')
     throw error
-  } finally {
-    core.info(`Logging out from Portainer instance...`)
-    await portainerApi.logout()
   }
 }
